@@ -42,6 +42,9 @@ PRODUCT_COPY_FILES += \
     $(RECOVERY_TS_FW_PATH)/nvt_tm_fw.bin:recovery/root/vendor/firmware/nvt_tm_fw.bin \
     $(RECOVERY_TS_FW_PATH)/nvt_tm_mp.bin:recovery/root/vendor/firmware/nvt_tm_mp.bin
 
+# for signing builds
+ -include vendor/lineage-priv/keys/keys.mk
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service \
