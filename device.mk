@@ -29,6 +29,11 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 2340
 
+# Dex/ART optimization
+PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
+PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
+USE_DEX2OAT_DEBUG := false
+
 # Firmware
 RECOVERY_TS_FW_PATH := vendor/xiaomi/lancelot/proprietary/vendor/firmware
 
