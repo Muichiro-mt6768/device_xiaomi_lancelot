@@ -14,6 +14,19 @@ $(call inherit-product, device/xiaomi/lancelot/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+TARGET_DISABLE_EPPE := true
+
+# Axion Flags
+AXION_MAINTAINER := Muichir09
+AXION_PROCESSOR := Mediatek Helio_G80
+AXION_CPU_SMALL_CORES := 0,1,2,3
+AXION_CPU_BIG_CORES := 4,5,6,7
+AXION_MODERN_KERNEL := true
+AXION_CAMERA_REAR_INFO := 13,8,5,2
+AXION_CAMERA_FRONT_INFO := 8
+WITH_GMS := false
+BYPASS_CHARGE_SUPPORTED := false
+
 PRODUCT_NAME := lineage_lancelot
 PRODUCT_DEVICE := lancelot
 PRODUCT_MANUFACTURER := Xiaomi
