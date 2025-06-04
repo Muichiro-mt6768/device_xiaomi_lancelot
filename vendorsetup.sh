@@ -8,7 +8,7 @@ git clone -b 15 https://github.com/Muichiro-mt6768/vendor_xiaomi_lancelot.git ve
 
 # device/xiaomi/mt6768-common
 rm -rf device/xiaomi/mt6768-common
-git clone -b Infinity-15 https://github.com/Muichiro-mt6768/device_xiaomi_mt6768-common.git device/xiaomi/mt6768-common --depth=1
+git clone -b horizon https://github.com/Muichiro-mt6768/device_xiaomi_mt6768-common.git device/xiaomi/mt6768-common --depth=1
 
 # vendor/xiaomi/mt6768-common
 rm -rf vendor/xiaomi/mt6768-common

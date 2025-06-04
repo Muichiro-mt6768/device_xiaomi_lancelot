@@ -12,21 +12,28 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/lancelot/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := infinity_lancelot
+PRODUCT_NAME := lineage_lancelot
 PRODUCT_DEVICE := lancelot
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi 9
 
-# Infinity-X Specific Flags
-INFINITY_BUILD_TYPE := UNOFFICIAL
-INFINITY_MAINTAINER := Muichir09
-WITH_GAPPS := false
-TARGET_BUILD_GOOGLE_TELEPHONY := false
-USE_MOTO_CALCULATOR := true
-TARGET_SUPPORTS_BLUR := false
+# Maintainer username
+HORIZON_MAINTAINER := Muichir09
+
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# Gapps flags
+WITH_GMS := false
+
+# Other flags
+TARGET_INCLUDE_MATLOG := true
+TARGET_INCLUDE_ACCORD := true
+TARGET_PREBUILT_BCR := true
+PRODUCT_NO_CAMERA := false
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
