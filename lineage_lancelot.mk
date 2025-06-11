@@ -14,26 +14,17 @@ $(call inherit-product, device/xiaomi/lancelot/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+BUILD_SEEDVAULT := false
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_HAS_UDFPS := false
+TARGET_INCLUDE_ACCORD = false
+WITH_GMS := false
+
 PRODUCT_NAME := lineage_lancelot
 PRODUCT_DEVICE := lancelot
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi 9
-
-# Maintainer username
-HORIZON_MAINTAINER := Muichir09
-
-# Face Unlock
-TARGET_FACE_UNLOCK_SUPPORTED := true
-
-# Gapps flags
-WITH_GMS := false
-
-# Other flags
-TARGET_INCLUDE_MATLOG := true
-TARGET_INCLUDE_ACCORD := true
-TARGET_PREBUILT_BCR := true
-PRODUCT_NO_CAMERA := false
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
