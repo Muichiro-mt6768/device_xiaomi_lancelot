@@ -20,21 +20,6 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi 9
 
-# Maintainer username
-HORIZON_MAINTAINER := Muichir09
-
-# Face Unlock
-TARGET_FACE_UNLOCK_SUPPORTED := true
-
-# Gapps flags
-WITH_GMS := false
-
-# Other flags
-TARGET_INCLUDE_MATLOG := true
-TARGET_INCLUDE_ACCORD := true
-TARGET_PREBUILT_BCR := true
-PRODUCT_NO_CAMERA := false
-
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
